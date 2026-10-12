@@ -360,13 +360,8 @@ class Component extends DCLogic {
       raf = 0;
       const g = window.__gem, cv = document.getElementById('gem3d');
       if (!cv || !g) { setTimeout(() => { if (window.__gemKick) window.__gemKick(); }, 250); return; }
-      if (!vis) return;
       try {
-        if (cv !== bound) {
-          bound = cv; if (io) io.disconnect();
-          io = new IntersectionObserver((en) => { vis = en[0].isIntersecting; if (vis && !raf) raf = requestAnimationFrame(frame); }, { rootMargin: '80px' });
-          io.observe(cv);
-        }
+        { const rr = cv.getBoundingClientRect(); if (rr.bottom < -80 || rr.top > window.innerHeight + 80) { setTimeout(() => { if (!raf) raf = requestAnimationFrame(frame); }, 200); return; } }
         const dt = Math.min(48, t - (lastTs || t)); lastTs = t;
         const r = cv.getBoundingClientRect();
         if (r.width > 0) {
@@ -385,7 +380,7 @@ class Component extends DCLogic {
           }
         }
       } catch (e) {}
-      if (vis) raf = requestAnimationFrame(frame);
+      raf = requestAnimationFrame(frame);
     };
     window.__gemKick = () => { lastTs = 0; if (!raf) raf = requestAnimationFrame(frame); };
     window.__gemKick();
