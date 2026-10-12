@@ -36,6 +36,10 @@ button{font:inherit}
 .lnk{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:underline;text-underline-offset:5px}
 .h2{margin:0;font-family:var(--fd);font-weight:400;line-height:1.1;font-size:calc(var(--hs) * clamp(28px, 3vw, 40px))}
 .wa-fab{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28);z-index:60}
+.sep{border-color:var(--trust-line)}
+
+.tab-on{border-bottom-color:var(--live) !important}
+#gem3d-section{border-top:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent)}
 @media (prefers-reduced-motion:reduce){.card img{transition:none}}
 @media (max-width:1000px){.hfeat{display:none !important}.hring{width:100% !important;opacity:.55}.split{grid-template-columns:1fr !important}.sep{border-right:0 !important;border-bottom:1px solid var(--line)}}
 @media (max-width:1000px){.nav-links{display:flex !important;order:3;width:100%;overflow-x:auto;gap:22px !important;padding:2px 0 0;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}.hdr{flex-wrap:wrap}.split.trust{grid-template-columns:1fr 1fr !important}#gem3d-section{background:radial-gradient(circle 300px at 50% 440px,rgba(255,240,200,.22),rgba(255,240,200,0) 100%),radial-gradient(circle 280px at 50% 440px,transparent 0 274px,color-mix(in srgb,var(--accent) 55%,transparent) 276px,transparent 280px),radial-gradient(circle 345px at 50% 440px,transparent 0 339px,color-mix(in srgb,var(--accent) 28%,transparent) 341px,transparent 345px),radial-gradient(ellipse 60% 45% at 50% 105%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 70%),radial-gradient(ellipse 50% 70% at 100% 0%,color-mix(in srgb,var(--stage-b) 90%,transparent),transparent 70%),linear-gradient(135deg,var(--stage-a) 0%,color-mix(in srgb,var(--stage-b) 55%,var(--stage-a)) 50%,var(--stage-a) 100%) !important}.rays{background:repeating-conic-gradient(from 0deg at 50% 440px,rgba(255,255,255,.04) 0deg 2deg,rgba(255,255,255,0) 2deg 12deg) !important;-webkit-mask-image:radial-gradient(ellipse 60% 40% at 50% 440px,#000 0%,transparent 75%) !important;mask-image:radial-gradient(ellipse 60% 40% at 50% 440px,#000 0%,transparent 75%) !important}.hero p{max-width:330px !important}.hero{min-height:520px !important}.whyph{aspect-ratio:4/3 !important}.g-cat{grid-template-columns:repeat(5,1fr) !important}.split.trust .sep{border-bottom:1px solid var(--line)}}
@@ -65,7 +69,7 @@ section[style*="margin-top:96px"],section[style*="margin:96px 0 0"]{margin-top:5
 <script type="text/template" id="tpl">
 
 
-<div style="min-height:100vh;background:var(--bg);color:var(--ink);font-family:var(--fb);{{themeVars}}">
+<div style="min-height:100vh;background:var(--page-bg,var(--bg));background-color:var(--bg);color:var(--ink);font-family:var(--fb);{{themeVars}}">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
@@ -110,7 +114,7 @@ section[style*="margin-top:96px"],section[style*="margin:96px 0 0"]{margin-top:5
 <p style="margin:0 0 34px;font-size:19px;line-height:1.6;color:var(--hero-muted);max-width:430px">Lab-grown diamonds, graded and set to order in Dubai.</p>
 <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-light" href="#collection">View this</a><a class="btn btn-ghost" href="#categories">Collection</a></div>
 </div></section>
-<section style="background:var(--card);border-bottom:1px solid var(--line)"><div class="split trust" style="max-width:1360px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)"><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14L7 22l5-3 5 3-1.5-8"></path></svg><span style="font-size:14px;font-weight:500">Certified diamonds</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg><span style="font-size:14px;font-weight:500">Made to order</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 9.5V12l1.8 1.2M9 7l.6-4h4.8l.6 4M9 17l.6 4h4.8l.6-4"></path></svg><span style="font-size:14px;font-weight:500">Luxury watches</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path></svg><span style="font-size:14px;font-weight:500">WhatsApp support</span></div></div></section>
+<section style="background:var(--trust-bg);border-bottom:1px solid var(--trust-line)"><div class="split trust" style="max-width:1360px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)"><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--trust-line);color:var(--trust-ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14L7 22l5-3 5 3-1.5-8"></path></svg><span style="font-size:14px;font-weight:500">Certified diamonds</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--trust-line);color:var(--trust-ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg><span style="font-size:14px;font-weight:500">Made to order</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--trust-line);color:var(--trust-ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 9.5V12l1.8 1.2M9 7l.6-4h4.8l.6 4M9 17l.6 4h4.8l.6-4"></path></svg><span style="font-size:14px;font-weight:500">Luxury watches</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--trust-ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path></svg><span style="font-size:14px;font-weight:500">WhatsApp support</span></div></div></section>
 <section class="px" id="categories" style="max-width:1360px;margin:0 auto;padding:80px 40px 8px">
 <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px"><h2 class="h2">Shop by category</h2><a class="lnk" href="#collection">View all</a></div>
 <div class="g-cat" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px"><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/h2.jpg" alt="Rings" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Rings</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/e3.jpg" alt="Earrings" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Earrings</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/tb.jpg" alt="Bracelets" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Bracelets</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/n6.jpg" alt="Pendants" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Pendants</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/p8.jpg" alt="Watches" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Watches</div></a></div></section>
@@ -391,15 +395,15 @@ class Component extends DCLogic {
       emerald: {
         name: 'Emerald', dot: '#093624', hero: 'row',
         v: {
-          'bg': '#EFF8EC', 'card': '#DDEEDD', 'surface': '#FFFFFF', 'ink': '#01411C', 'muted': '#40604F', 'line': '#BFDCC5', 'band': '#CDE7D3', 'glow': '#2FB583',
+          'bg': '#E6F2E6', 'card': '#DDEEDD', 'surface': '#FFFFFF', 'ink': '#01411C', 'muted': '#40604F', 'line': '#BFDCC5', 'band': '#CDE7D3', 'page-bg': "radial-gradient(1100px 700px at 8% 0%, #F1F8EE 0%, rgba(241,248,238,0) 60%), radial-gradient(1100px 900px at 100% 45%, rgba(2,40,22,.10) 0%, rgba(2,40,22,0) 65%), radial-gradient(900px 700px at 0% 78%, rgba(2,40,22,.07) 0%, rgba(2,40,22,0) 62%), repeating-linear-gradient(135deg, rgba(1,40,20,.03) 0 1px, rgba(1,40,20,0) 1px 26px), linear-gradient(180deg, #F0F8EE 0%, #E6F2E7 100%)", 'glow': '#2FB583',
           'hero-bg': 'radial-gradient(1200px 640px at 75% 40%, #12583A 0%, #093624 46%, #04180F 100%)',
-          'hero-img': 'url(assets/hero1.jpg)', 'hero-fade': '#01411C', 'hero-ink': '#F4F1E8', 'hero-muted': '#BFD3C8', 'accent': '#C6A15B', 'price': '#0B7A43',
-          'btn-bg': '#C6A15B', 'btn-ink': '#1B1507', 'foot-bg': 'linear-gradient(165deg,#01411C 0%,#0B6B3A 55%,#01411C 100%)', 'foot-ink': '#C3D6CB',
+          'hero-img': 'url(assets/hero1.jpg)', 'hero-fade': '#032616', 'hero-ink': '#F4F1E8', 'hero-muted': '#BFD3C8', 'accent': '#C6A15B', 'price': '#0B7A43',
+          'btn-bg': '#C6A15B', 'btn-ink': '#1B1507', 'foot-bg': 'linear-gradient(160deg,#020F09 0%,#05331C 55%,#0A4A2B 100%)', 'foot-ink': '#C3D6CB',
           'pic-bg': 'radial-gradient(circle at 50% 35%, #FFFFFF 0%, #C9E7D2 100%)',
           'metal': '#C6A15B', 'metal-hi': '#F1DFA6', 'metal-lo': '#8E6C2A',
           'g1': '#9ED3B5', 'g2': '#EAF6EF', 'g3': '#F0E2BC', 'g4': '#2F7A57', 'g5': '#5FAE86', 'g6': '#1F5E43',
           'glow': 'rgba(94,190,140,.45)', 'dshadow': 'rgba(0,0,0,.4)', 'star': '#FFFFFF', 'ring': '#093624', 'hl': '#D9B76B', 'hi': 'italic',
-          'stage-a': '#012A14', 'stage-b': '#0E7A44', 'fd': "'Bodoni Moda', serif", 'fb': "'Hanken Grotesk', sans-serif", 'hs': '1'
+          'trust-bg': '#DDEEDD', 'trust-ink': '#01411C', 'trust-line': '#BFDCC5', 'live': '#25D366', 'stage-a': '#010D07', 'stage-b': '#0B6A3B', 'fd': "'Bodoni Moda', serif", 'fb': "'Hanken Grotesk', sans-serif", 'hs': '1'
         }
       },
       noir: {
@@ -413,7 +417,7 @@ class Component extends DCLogic {
           'metal': '#D9B77A', 'metal-hi': '#F5E1B5', 'metal-lo': '#9A7A3F',
           'g1': '#E9E4DA', 'g2': '#FFFFFF', 'g3': '#F3D9A0', 'g4': '#8F8A82', 'g5': '#C9C4BA', 'g6': '#5C5851',
           'glow': 'rgba(217,183,122,.32)', 'dshadow': 'rgba(0,0,0,.7)', 'star': '#FFFFFF', 'ring': '#131211', 'hl': '#D9B77A', 'hi': 'italic',
-          'stage-a': '#0A0A0B', 'stage-b': '#3A2E18', 'fd': "'Cormorant Garamond', serif", 'fb': "'Jost', sans-serif", 'hs': '1.14'
+          'trust-bg': '#161618', 'trust-ink': '#F3EEE4', 'trust-line': '#2B2B2E', 'live': '#D9B77A', 'stage-a': '#0A0A0B', 'stage-b': '#3A2E18', 'fd': "'Cormorant Garamond', serif", 'fb': "'Jost', sans-serif", 'hs': '1.14'
         }
       },
       ivory: {
@@ -427,7 +431,7 @@ class Component extends DCLogic {
           'metal': '#D9959C', 'metal-hi': '#F7D9D4', 'metal-lo': '#A8626C',
           'g1': '#F6D5DA', 'g2': '#FFF7F8', 'g3': '#FBE3C8', 'g4': '#D79BA6', 'g5': '#EBBAC3', 'g6': '#B76E79',
           'glow': 'rgba(255,255,255,.85)', 'dshadow': 'rgba(120,50,60,.28)', 'star': '#B76E79', 'ring': '#F1D5CD', 'hl': '#8E4452', 'hi': 'normal',
-          'stage-a': '#2A1219', 'stage-b': '#8A4358', 'fd': "'Gilda Display', serif", 'fb': "'Figtree', sans-serif", 'hs': '1'
+          'trust-bg': '#F6EBE5', 'trust-ink': '#3A2528', 'trust-line': '#EBDAD2', 'live': '#B76E79', 'stage-a': '#2A1219', 'stage-b': '#8A4358', 'fd': "'Gilda Display', serif", 'fb': "'Figtree', sans-serif", 'hs': '1'
         }
       },
       sapphire: {
@@ -441,7 +445,7 @@ class Component extends DCLogic {
           'metal': '#C5D0E2', 'metal-hi': '#FFFFFF', 'metal-lo': '#8191B0',
           'g1': '#A9C6F2', 'g2': '#EEF4FF', 'g3': '#DDE8FF', 'g4': '#3F6FB8', 'g5': '#6D98D8', 'g6': '#1E3F7A',
           'glow': 'rgba(110,160,255,.42)', 'dshadow': 'rgba(0,0,0,.45)', 'star': '#FFFFFF', 'ring': '#0B1B33', 'hl': '#B8C9E8', 'hi': 'normal',
-          'stage-a': '#081230', 'stage-b': '#2547A8', 'fd': "'Marcellus', serif", 'fb': "'Manrope', sans-serif", 'hs': '1'
+          'trust-bg': '#EAEFF8', 'trust-ink': '#0B1B33', 'trust-line': '#D6DFEE', 'live': '#5B8CFF', 'stage-a': '#081230', 'stage-b': '#2547A8', 'fd': "'Marcellus', serif", 'fb': "'Manrope', sans-serif", 'hs': '1'
         }
       }
     };
