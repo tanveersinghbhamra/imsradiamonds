@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IMSRA | Lab-grown diamonds, jewellery and watches</title>
+<meta name="robots" content="noindex"><meta name="description" content="IMSRA: certified lab-grown diamonds, jewellery and luxury watches, set to order in Dubai.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=Hanken+Grotesk:wght@400..700&amp;family=Cormorant+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Jost:wght@400..600&amp;family=Gilda+Display&amp;family=Figtree:wght@400..700&amp;family=Marcellus&amp;family=Manrope:wght@400..700&amp;display=swap">
+<style>
+body{margin:0;background:#111}
+*{box-sizing:border-box}
+a{color:inherit}
+button{font:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 30px;border-radius:0;font-family:var(--fb);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-light{background:#fff;color:#111}
+.btn-light:hover{background:var(--btn-bg);color:var(--btn-ink)}
+.btn-ghost{border-color:var(--hero-ink);color:var(--hero-ink);background:transparent}
+.btn-ghost:hover{background:var(--hero-ink);color:var(--hero-bg-solid,#111)}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{background:var(--price)}
+.btn:focus-visible,.tab:focus-visible,.tb:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.opt{min-height:42px;padding:0 18px;border:1px solid rgba(127,127,127,.55);background:transparent;color:var(--hero-ink);font-family:var(--fb);font-weight:600;font-size:13px;letter-spacing:.06em;cursor:pointer;border-radius:0;transition:background .2s,color .2s}
+.opt:hover{border-color:var(--hero-ink)}
+.opt-on{background:#fff;color:#111;border-color:#fff}
+.tab{background:none;border:0;border-bottom:2px solid transparent;padding:10px 2px;margin-right:30px;color:var(--muted);font-family:var(--fb);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.tab:hover{color:var(--ink)}
+.tab-on{color:var(--ink);border-bottom-color:var(--ink)}
+.tb{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #3a3a3a;background:#1c1c1c;color:#f2f2f2;font-family:system-ui,sans-serif;font-weight:600;font-size:14px;cursor:pointer}
+.tb:hover{border-color:#8a8a8a}
+.tb-on{background:#f2f2f2;color:#111;border-color:#f2f2f2}
+.card .ph{overflow:hidden}
+.card img{transition:transform .7s ease}
+.card:hover img{transform:scale(1.05)}
+.nav-link{text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);padding:10px 2px;border-bottom:1px solid transparent}
+.nav-link:hover{border-bottom-color:var(--ink)}
+.lnk{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:underline;text-underline-offset:5px}
+.h2{margin:0;font-family:var(--fd);font-weight:400;line-height:1.1;font-size:calc(var(--hs) * clamp(28px, 3vw, 40px))}
+.wa-fab{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28);z-index:60}
+@media (prefers-reduced-motion:reduce){.card img{transition:none}}
+@media (max-width:1000px){.nav-links{display:none !important}.hfeat{display:none !important}.hring{width:100% !important;opacity:.55}.split{grid-template-columns:1fr !important}.sep{border-right:0 !important;border-bottom:1px solid var(--line)}}
+</style>
+
+</head><body>
+<div id="app"></div>
+<script type="text/template" id="tpl">
+
+
+<div style="min-height:100vh;background:var(--bg);color:var(--ink);font-family:var(--fb);{{themeVars}}">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<radialGradient id="tg" cx=".35" cy=".3" r=".8"><stop offset="0" style="stop-color:#fff;stop-opacity:.95"></stop><stop offset=".5" style="stop-color:#fff;stop-opacity:.25"></stop><stop offset="1" style="stop-color:#fff;stop-opacity:0"></stop></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--metal-hi)"></stop><stop offset=".45" style="stop-color:var(--metal)"></stop><stop offset=".7" style="stop-color:var(--metal-hi)"></stop><stop offset="1" style="stop-color:var(--metal-lo)"></stop></linearGradient>
+<radialGradient id="mr" cx=".35" cy=".3" r=".8"><stop offset="0" style="stop-color:var(--metal-hi)"></stop><stop offset=".55" style="stop-color:var(--metal)"></stop><stop offset="1" style="stop-color:var(--metal-lo)"></stop></radialGradient>
+<radialGradient id="dial" cx=".38" cy=".3" r=".9"><stop offset="0" style="stop-color:var(--g5)"></stop><stop offset=".55" style="stop-color:var(--g6)"></stop><stop offset="1" style="stop-color:#000;stop-opacity:.6"></stop></radialGradient>
+<linearGradient id="strap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:#000;stop-opacity:.35"></stop><stop offset=".5" style="stop-color:#fff;stop-opacity:.1"></stop><stop offset="1" style="stop-color:#000;stop-opacity:.4"></stop></linearGradient>
+<symbol id="rb" viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" style="fill:var(--g2)"></circle><polygon points="140.7,83.2 140.7,116.8 162,100" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="140.7,116.8 162,100 185,135.2 143.8,143.8" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="162,100 185,64.8 192,100" style="fill:var(--g6);opacity:0.34;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="162,100 192,100 185,135.2" style="fill:var(--g6);opacity:0.35;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="140.7,116.8 116.8,140.7 143.8,143.8" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="116.8,140.7 143.8,143.8 135.2,185 100,162" style="fill:var(--g6);opacity:0.57;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="143.8,143.8 185,135.2 165.1,165.1" style="fill:var(--g6);opacity:0.50;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="143.8,143.8 165.1,165.1 135.2,185" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="116.8,140.7 83.2,140.7 100,162" style="fill:var(--g6);opacity:0.51;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="83.2,140.7 100,162 64.8,185 56.2,143.8" style="fill:var(--g6);opacity:0.23;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="100,162 135.2,185 100,192" style="fill:var(--g6);opacity:0.35;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="100,162 100,192 64.8,185" style="fill:var(--g6);opacity:0.50;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="83.2,140.7 59.3,116.8 56.2,143.8" style="fill:var(--g6);opacity:0.08;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="59.3,116.8 56.2,143.8 15,135.2 38,100" style="fill:#fff;opacity:0.56;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="56.2,143.8 64.8,185 34.9,165.1" style="fill:var(--g6);opacity:0.32;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="56.2,143.8 34.9,165.1 15,135.2" style="fill:#fff;opacity:0.15;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="59.3,116.8 59.3,83.2 38,100" style="fill:#fff;opacity:0.73;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="59.3,83.2 38,100 15,64.8 56.2,56.2" style="fill:#fff;opacity:0.87;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="38,100 15,135.2 8,100" style="fill:#fff;opacity:0.42;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="38,100 8,100 15,64.8" style="fill:#fff;opacity:0.72;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="59.3,83.2 83.2,59.3 56.2,56.2" style="fill:#fff;opacity:0.87;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="83.2,59.3 56.2,56.2 64.8,15 100,38" style="fill:#fff;opacity:0.59;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="56.2,56.2 15,64.8 34.9,34.9" style="fill:#fff;opacity:0.79;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="56.2,56.2 34.9,34.9 64.8,15" style="fill:#fff;opacity:0.87;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="83.2,59.3 116.8,59.3 100,38" style="fill:#fff;opacity:0.87;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="116.8,59.3 100,38 135.2,15 143.8,56.2" style="fill:#fff;opacity:0.26;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="100,38 64.8,15 100,8" style="fill:#fff;opacity:0.72;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="100,38 100,8 135.2,15" style="fill:#fff;opacity:0.72;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="116.8,59.3 140.7,83.2 143.8,56.2" style="fill:var(--g6);opacity:0.24;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="140.7,83.2 143.8,56.2 185,64.8 162,100" style="fill:var(--g6);opacity:0.34;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="143.8,56.2 135.2,15 165.1,34.9" style="fill:#fff;opacity:0.30;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="143.8,56.2 165.1,34.9 185,64.8" style="fill:#fff;opacity:0.24;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="140.7,116.8 116.8,140.7 83.2,140.7 59.3,116.8 59.3,83.2 83.2,59.3 116.8,59.3 140.7,83.2" style="fill:var(--g2);opacity:.55;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="140.7,116.8 116.8,140.7 83.2,140.7 59.3,116.8 59.3,83.2 83.2,59.3 116.8,59.3 140.7,83.2" style="fill:url(#tg)"></polygon><circle cx="100" cy="100" r="92" fill="none" style="stroke:var(--g6);stroke-opacity:.45;stroke-width:1.2"></circle><polygon points="128.3,168.4 149.3,170.4 114.9,184.7" style="fill:#FF6FB5;opacity:.38"></polygon><polygon points="31.6,128.3 29.6,149.3 15.3,114.9" style="fill:#5AD0FF;opacity:.38"></polygon><polygon points="31.6,71.7 15.3,85.1 29.6,50.7" style="fill:#FFC857;opacity:.38"></polygon><polygon points="128.3,31.6 114.9,15.3 149.3,29.6" style="fill:#7CFFB2;opacity:.38"></polygon></symbol><symbol id="ec" viewBox="0 0 200 140"><rect x="0" y="0" width="200" height="140" rx="18" style="fill:var(--g2)"></rect><polygon points="31,5 169,5 155,22 45,22" style="fill:#fff;opacity:0.43;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="169,5 195,31 175,42 155,22" style="fill:var(--g6);opacity:0.26;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="195,31 195,109 175,98 175,42" style="fill:var(--g6);opacity:0.40;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="195,109 169,135 155,118 175,98" style="fill:var(--g6);opacity:0.44;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="169,135 31,135 45,118 155,118" style="fill:var(--g6);opacity:0.56;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="31,135 5,109 25,98 45,118" style="fill:#fff;opacity:0.30;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="5,109 5,31 25,42 25,98" style="fill:#fff;opacity:0.80;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="5,31 31,5 45,22 25,42" style="fill:#fff;opacity:0.62;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="45,22 155,22 142,37 58,37" style="fill:#fff;opacity:0.50;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="155,22 175,42 156,51 142,37" style="fill:var(--g6);opacity:0.23;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="175,42 175,98 156,89 156,51" style="fill:var(--g6);opacity:0.35;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="175,98 155,118 142,103 156,89" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="155,118 45,118 58,103 142,103" style="fill:var(--g6);opacity:0.51;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="45,118 25,98 44,89 58,103" style="fill:#fff;opacity:0.40;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="25,98 25,42 44,51 44,89" style="fill:#fff;opacity:0.87;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="25,42 45,22 58,37 44,51" style="fill:#fff;opacity:0.69;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="58,37 142,37 128,51 72,51" style="fill:#fff;opacity:0.58;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="142,37 156,51 137,60 128,51" style="fill:var(--g6);opacity:0.20;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="156,51 156,89 137,80 137,60" style="fill:var(--g6);opacity:0.30;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="156,89 142,103 128,89 137,80" style="fill:var(--g6);opacity:0.61;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="142,103 58,103 72,89 128,89" style="fill:var(--g6);opacity:0.46;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="58,103 44,89 63,80 72,89" style="fill:#fff;opacity:0.51;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="44,89 44,51 63,60 63,80" style="fill:#fff;opacity:0.43;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="44,51 58,37 72,51 63,60" style="fill:#fff;opacity:0.76;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="72,51 128,51 137,60 137,80 128,89 72,89 63,80 63,60" style="fill:var(--g2);opacity:.6;stroke:#fff;stroke-opacity:.6;stroke-width:.5" stroke-linejoin="round"></polygon><polygon points="72,51 128,51 137,60 137,80 128,89 72,89 63,80 63,60" style="fill:url(#tg)"></polygon></symbol><symbol id="m-ring" viewBox="0 0 160 160"><ellipse cx="80" cy="151" rx="46" ry="5" style="fill:#000;opacity:.16"></ellipse><circle cx="80" cy="110" r="38" fill="none" stroke="url(#metal)" stroke-width="9"></circle><circle cx="80" cy="110" r="34" fill="none" style="stroke:var(--metal-lo);stroke-opacity:.5;stroke-width:1.2"></circle><path d="M49 94 A37 37 0 0 1 72 73" fill="none" style="stroke:#fff;stroke-opacity:.7;stroke-width:2;stroke-linecap:round"></path><circle cx="47.8" cy="89.9" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="44.6" y="86.7" width="6.4" height="6.4"></use><circle cx="51.8" cy="84.6" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="48.6" y="81.4" width="6.4" height="6.4"></use><circle cx="56.6" cy="80.1" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="53.4" y="76.9" width="6.4" height="6.4"></use><circle cx="103.4" cy="80.1" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="100.2" y="76.9" width="6.4" height="6.4"></use><circle cx="108.2" cy="84.6" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="105" y="81.4" width="6.4" height="6.4"></use><circle cx="112.2" cy="89.9" r="4.2" fill="url(#mr)"></circle><use href="#rb" x="109" y="86.7" width="6.4" height="6.4"></use><path d="M62 60 L98 60 L90 78 L70 78 Z" fill="url(#metal)"></path><use href="#rb" x="56" y="24" width="48" height="48"></use><circle cx="62.3" cy="30.3" r="2.6" fill="url(#mr)"></circle><circle cx="97.7" cy="30.3" r="2.6" fill="url(#mr)"></circle><circle cx="97.7" cy="65.7" r="2.6" fill="url(#mr)"></circle><circle cx="62.3" cy="65.7" r="2.6" fill="url(#mr)"></circle></symbol><symbol id="m-earring" viewBox="0 0 160 160"><ellipse cx="80" cy="154" rx="62" ry="4" style="fill:#000;opacity:.14"></ellipse><path d="M42 6 Q50 6 50 14" fill="none" stroke="url(#metal)" stroke-width="2.4" stroke-linecap="round"></path><circle cx="42" cy="22" r="9" fill="url(#mr)"></circle><use href="#rb" x="35" y="15" width="14" height="14"></use><line x1="42" y1="31" x2="42" y2="44" stroke="url(#metal)" stroke-width="2"></line><g transform="translate(42 94)"><circle cx="0" cy="33" r="5" fill="url(#mr)"></circle><use href="#rb" x="-4" y="29" width="8" height="8"></use><circle cx="-9.6" cy="30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="-13.6" y="26.5" width="8" height="8"></use><circle cx="-17.7" cy="23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="-21.7" y="19.3" width="8" height="8"></use><circle cx="-23.1" cy="12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="-27.1" y="8.6" width="8" height="8"></use><circle cx="-25" cy="0" r="5" fill="url(#mr)"></circle><use href="#rb" x="-29" y="-4" width="8" height="8"></use><circle cx="-23.1" cy="-12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="-27.1" y="-16.6" width="8" height="8"></use><circle cx="-17.7" cy="-23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="-21.7" y="-27.3" width="8" height="8"></use><circle cx="-9.6" cy="-30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="-13.6" y="-34.5" width="8" height="8"></use><circle cx="-0" cy="-33" r="5" fill="url(#mr)"></circle><use href="#rb" x="-4" y="-37" width="8" height="8"></use><circle cx="9.6" cy="-30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="5.6" y="-34.5" width="8" height="8"></use><circle cx="17.7" cy="-23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="13.7" y="-27.3" width="8" height="8"></use><circle cx="23.1" cy="-12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="19.1" y="-16.6" width="8" height="8"></use><circle cx="25" cy="-0" r="5" fill="url(#mr)"></circle><use href="#rb" x="21" y="-4" width="8" height="8"></use><circle cx="23.1" cy="12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="19.1" y="8.6" width="8" height="8"></use><circle cx="17.7" cy="23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="13.7" y="19.3" width="8" height="8"></use><circle cx="9.6" cy="30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="5.6" y="26.5" width="8" height="8"></use><ellipse cx="0" cy="0" rx="19" ry="27" fill="url(#metal)"></ellipse><g transform="scale(.76 1)"><use href="#rb" x="-24" y="-24" width="48" height="48"></use></g></g><path d="M118 6 Q126 6 126 14" fill="none" stroke="url(#metal)" stroke-width="2.4" stroke-linecap="round"></path><circle cx="118" cy="22" r="9" fill="url(#mr)"></circle><use href="#rb" x="111" y="15" width="14" height="14"></use><line x1="118" y1="31" x2="118" y2="44" stroke="url(#metal)" stroke-width="2"></line><g transform="translate(118 94)"><circle cx="0" cy="33" r="5" fill="url(#mr)"></circle><use href="#rb" x="-4" y="29" width="8" height="8"></use><circle cx="-9.6" cy="30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="-13.6" y="26.5" width="8" height="8"></use><circle cx="-17.7" cy="23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="-21.7" y="19.3" width="8" height="8"></use><circle cx="-23.1" cy="12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="-27.1" y="8.6" width="8" height="8"></use><circle cx="-25" cy="0" r="5" fill="url(#mr)"></circle><use href="#rb" x="-29" y="-4" width="8" height="8"></use><circle cx="-23.1" cy="-12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="-27.1" y="-16.6" width="8" height="8"></use><circle cx="-17.7" cy="-23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="-21.7" y="-27.3" width="8" height="8"></use><circle cx="-9.6" cy="-30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="-13.6" y="-34.5" width="8" height="8"></use><circle cx="-0" cy="-33" r="5" fill="url(#mr)"></circle><use href="#rb" x="-4" y="-37" width="8" height="8"></use><circle cx="9.6" cy="-30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="5.6" y="-34.5" width="8" height="8"></use><circle cx="17.7" cy="-23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="13.7" y="-27.3" width="8" height="8"></use><circle cx="23.1" cy="-12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="19.1" y="-16.6" width="8" height="8"></use><circle cx="25" cy="-0" r="5" fill="url(#mr)"></circle><use href="#rb" x="21" y="-4" width="8" height="8"></use><circle cx="23.1" cy="12.6" r="5" fill="url(#mr)"></circle><use href="#rb" x="19.1" y="8.6" width="8" height="8"></use><circle cx="17.7" cy="23.3" r="5" fill="url(#mr)"></circle><use href="#rb" x="13.7" y="19.3" width="8" height="8"></use><circle cx="9.6" cy="30.5" r="5" fill="url(#mr)"></circle><use href="#rb" x="5.6" y="26.5" width="8" height="8"></use><ellipse cx="0" cy="0" rx="19" ry="27" fill="url(#metal)"></ellipse><g transform="scale(.76 1)"><use href="#rb" x="-24" y="-24" width="48" height="48"></use></g></g></symbol><symbol id="m-bracelet" viewBox="0 0 160 160"><ellipse cx="80" cy="150" rx="62" ry="5" style="fill:#000;opacity:.13"></ellipse><ellipse cx="80" cy="82" rx="60" ry="36" fill="none" stroke="url(#metal)" stroke-width="6"></ellipse><circle cx="88.4" cy="46.4" r="7.1" fill="url(#mr)"></circle><use href="#rb" x="82.8" y="40.8" width="11" height="11"></use><circle cx="69.6" cy="46.5" r="7.1" fill="url(#mr)"></circle><use href="#rb" x="64.1" y="41" width="11" height="11"></use><circle cx="106.3" cy="49.6" r="7.2" fill="url(#mr)"></circle><use href="#rb" x="100.7" y="44" width="11.3" height="11.3"></use><circle cx="51.8" cy="50.2" r="7.2" fill="url(#mr)"></circle><use href="#rb" x="46.2" y="44.6" width="11.3" height="11.3"></use><circle cx="121.7" cy="56.1" r="7.5" fill="url(#mr)"></circle><use href="#rb" x="115.8" y="50.3" width="11.7" height="11.7"></use><circle cx="36.8" cy="57" r="7.5" fill="url(#mr)"></circle><use href="#rb" x="31" y="51.1" width="11.8" height="11.8"></use><circle cx="133" cy="65.1" r="7.9" fill="url(#mr)"></circle><use href="#rb" x="126.8" y="58.9" width="12.3" height="12.3"></use><circle cx="26.1" cy="66.2" r="7.9" fill="url(#mr)"></circle><use href="#rb" x="19.9" y="60" width="12.4" height="12.4"></use><circle cx="139.1" cy="75.7" r="8.4" fill="url(#mr)"></circle><use href="#rb" x="132.6" y="69.2" width="13.1" height="13.1"></use><circle cx="20.6" cy="77" r="8.4" fill="url(#mr)"></circle><use href="#rb" x="14" y="70.4" width="13.2" height="13.2"></use><circle cx="139.4" cy="87" r="8.9" fill="url(#mr)"></circle><use href="#rb" x="132.5" y="80.1" width="13.8" height="13.8"></use><circle cx="20.9" cy="88.3" r="8.9" fill="url(#mr)"></circle><use href="#rb" x="13.9" y="81.3" width="13.9" height="13.9"></use><circle cx="133.9" cy="97.8" r="9.3" fill="url(#mr)"></circle><use href="#rb" x="126.6" y="90.5" width="14.6" height="14.6"></use><circle cx="27" cy="98.9" r="9.4" fill="url(#mr)"></circle><use href="#rb" x="19.7" y="91.6" width="14.7" height="14.7"></use><circle cx="123.2" cy="107" r="9.8" fill="url(#mr)"></circle><use href="#rb" x="115.5" y="99.4" width="15.2" height="15.2"></use><circle cx="38.3" cy="107.9" r="9.8" fill="url(#mr)"></circle><use href="#rb" x="30.7" y="100.2" width="15.3" height="15.3"></use><circle cx="108.2" cy="113.8" r="10.1" fill="url(#mr)"></circle><use href="#rb" x="100.3" y="105.9" width="15.7" height="15.7"></use><circle cx="53.7" cy="114.4" r="10.1" fill="url(#mr)"></circle><use href="#rb" x="45.8" y="106.5" width="15.7" height="15.7"></use><circle cx="90.4" cy="117.5" r="10.2" fill="url(#mr)"></circle><use href="#rb" x="82.4" y="109.5" width="16" height="16"></use><circle cx="71.6" cy="117.6" r="10.2" fill="url(#mr)"></circle><use href="#rb" x="63.7" y="109.7" width="16" height="16"></use></symbol><symbol id="m-pendant" viewBox="0 0 160 160"><ellipse cx="80" cy="152" rx="40" ry="4" style="fill:#000;opacity:.13"></ellipse><path d="M24 14 Q80 120 136 14" fill="none" stroke="url(#metal)" stroke-width="2.4" stroke-dasharray="3.2 1.4"></path><circle cx="80" cy="76" r="7" fill="none" stroke="url(#metal)" stroke-width="2.4"></circle><g transform="translate(80 112)"><circle cx="30" cy="0" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="25.5" y="-4.5" width="9" height="9"></use><circle cx="28.2" cy="10.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="23.7" y="5.8" width="9" height="9"></use><circle cx="23" cy="19.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="18.5" y="14.8" width="9" height="9"></use><circle cx="15" cy="26" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="10.5" y="21.5" width="9" height="9"></use><circle cx="5.2" cy="29.5" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="0.7" y="25" width="9" height="9"></use><circle cx="-5.2" cy="29.5" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-9.7" y="25" width="9" height="9"></use><circle cx="-15" cy="26" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-19.5" y="21.5" width="9" height="9"></use><circle cx="-23" cy="19.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-27.5" y="14.8" width="9" height="9"></use><circle cx="-28.2" cy="10.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-32.7" y="5.8" width="9" height="9"></use><circle cx="-30" cy="0" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-34.5" y="-4.5" width="9" height="9"></use><circle cx="-28.2" cy="-10.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-32.7" y="-14.8" width="9" height="9"></use><circle cx="-23" cy="-19.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-27.5" y="-23.8" width="9" height="9"></use><circle cx="-15" cy="-26" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-19.5" y="-30.5" width="9" height="9"></use><circle cx="-5.2" cy="-29.5" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="-9.7" y="-34" width="9" height="9"></use><circle cx="5.2" cy="-29.5" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="0.7" y="-34" width="9" height="9"></use><circle cx="15" cy="-26" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="10.5" y="-30.5" width="9" height="9"></use><circle cx="23" cy="-19.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="18.5" y="-23.8" width="9" height="9"></use><circle cx="28.2" cy="-10.3" r="5.6" fill="url(#mr)"></circle><use href="#rb" x="23.7" y="-14.8" width="9" height="9"></use><circle cx="0" cy="0" r="23" fill="url(#metal)"></circle><use href="#rb" x="-21" y="-21" width="42" height="42"></use></g></symbol><symbol id="m-watch" viewBox="0 0 160 160"><ellipse cx="80" cy="154" rx="42" ry="4" style="fill:#000;opacity:.15"></ellipse><rect x="58" y="3" width="44" height="44" rx="9" style="fill:var(--g6)"></rect><rect x="58" y="3" width="44" height="44" rx="9" fill="url(#strap)"></rect><rect x="62.5" y="7" width="35" height="36" rx="6" fill="none" style="stroke:var(--metal-hi);stroke-opacity:.55;stroke-width:.8;stroke-dasharray:2 1.6"></rect><rect x="58" y="113" width="44" height="44" rx="9" style="fill:var(--g6)"></rect><rect x="58" y="113" width="44" height="44" rx="9" fill="url(#strap)"></rect><rect x="62.5" y="117" width="35" height="36" rx="6" fill="none" style="stroke:var(--metal-hi);stroke-opacity:.55;stroke-width:.8;stroke-dasharray:2 1.6"></rect><rect x="121" y="73" width="9" height="14" rx="3" fill="url(#metal)"></rect><circle cx="80" cy="80" r="46" fill="url(#metal)"></circle><circle cx="80" cy="80" r="40" style="fill:var(--metal-lo);opacity:.55"></circle><circle cx="80" cy="80" r="38" fill="url(#dial)"></circle><line x1="86" y1="80" x2="117" y2="80" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.9" y1="81" x2="116.4" y2="86.4" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.6" y1="82.1" x2="114.8" y2="92.7" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.2" y1="83" x2="112" y2="98.5" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="84.6" y1="83.9" x2="108.3" y2="103.8" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="83.9" y1="84.6" x2="103.8" y2="108.3" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="83" y1="85.2" x2="98.5" y2="112" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="82.1" y1="85.6" x2="92.7" y2="114.8" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="81" y1="85.9" x2="86.4" y2="116.4" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="80" y1="86" x2="80" y2="117" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="79" y1="85.9" x2="73.6" y2="116.4" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="77.9" y1="85.6" x2="67.3" y2="114.8" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="77" y1="85.2" x2="61.5" y2="112" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="76.1" y1="84.6" x2="56.2" y2="108.3" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="75.4" y1="83.9" x2="51.7" y2="103.8" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.8" y1="83" x2="48" y2="98.5" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.4" y1="82.1" x2="45.2" y2="92.7" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.1" y1="81" x2="43.6" y2="86.4" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74" y1="80" x2="43" y2="80" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.1" y1="79" x2="43.6" y2="73.6" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.4" y1="77.9" x2="45.2" y2="67.3" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="74.8" y1="77" x2="48" y2="61.5" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="75.4" y1="76.1" x2="51.7" y2="56.2" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="76.1" y1="75.4" x2="56.2" y2="51.7" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="77" y1="74.8" x2="61.5" y2="48" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="77.9" y1="74.4" x2="67.3" y2="45.2" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="79" y1="74.1" x2="73.6" y2="43.6" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="80" y1="74" x2="80" y2="43" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="81" y1="74.1" x2="86.4" y2="43.6" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="82.1" y1="74.4" x2="92.7" y2="45.2" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="83" y1="74.8" x2="98.5" y2="48" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="83.9" y1="75.4" x2="103.8" y2="51.7" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="84.6" y1="76.1" x2="108.3" y2="56.2" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.2" y1="77" x2="112" y2="61.5" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.6" y1="77.9" x2="114.8" y2="67.3" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="85.9" y1="79" x2="116.4" y2="73.6" style="stroke:#fff;stroke-opacity:.07;stroke-width:.8"></line><line x1="80" y1="51" x2="80" y2="45" stroke="url(#metal)" stroke-width="3" stroke-linecap="round"></line><line x1="95.5" y1="53.2" x2="97.5" y2="49.7" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="106.8" y1="64.5" x2="110.3" y2="62.5" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="109" y1="80" x2="115" y2="80" stroke="url(#metal)" stroke-width="3" stroke-linecap="round"></line><line x1="106.8" y1="95.5" x2="110.3" y2="97.5" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="95.5" y1="106.8" x2="97.5" y2="110.3" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="80" y1="109" x2="80" y2="115" stroke="url(#metal)" stroke-width="3" stroke-linecap="round"></line><line x1="64.5" y1="106.8" x2="62.5" y2="110.3" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="53.2" y1="95.5" x2="49.7" y2="97.5" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="51" y1="80" x2="45" y2="80" stroke="url(#metal)" stroke-width="3" stroke-linecap="round"></line><line x1="53.2" y1="64.5" x2="49.7" y2="62.5" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><line x1="64.5" y1="53.2" x2="62.5" y2="49.7" stroke="url(#metal)" stroke-width="1.6" stroke-linecap="round"></line><circle cx="80" cy="98" r="7.5" style="fill:#000;opacity:.25"></circle><circle cx="80" cy="98" r="7.5" fill="none" style="stroke:var(--metal);stroke-width:.8"></circle><circle cx="62" cy="80" r="7.5" style="fill:#000;opacity:.25"></circle><circle cx="62" cy="80" r="7.5" fill="none" style="stroke:var(--metal);stroke-width:.8"></circle><circle cx="98" cy="80" r="7.5" style="fill:#000;opacity:.25"></circle><circle cx="98" cy="80" r="7.5" fill="none" style="stroke:var(--metal);stroke-width:.8"></circle><line x1="80" y1="98" x2="80" y2="94.5" style="stroke:var(--metal-hi);stroke-width:.9"></line><line x1="62" y1="80" x2="65" y2="77.5" style="stroke:var(--metal-hi);stroke-width:.9"></line><line x1="98" y1="80" x2="95" y2="82.5" style="stroke:var(--metal-hi);stroke-width:.9"></line><use href="#rb" x="76.5" y="40" width="7" height="7"></use><line x1="80" y1="80" x2="80" y2="55" stroke="url(#metal)" stroke-width="3.6" stroke-linecap="round" transform="rotate(38 80 80)"></line><line x1="80" y1="80" x2="80" y2="47" stroke="url(#metal)" stroke-width="2.4" stroke-linecap="round" transform="rotate(-58 80 80)"></line><line x1="80" y1="86" x2="80" y2="45" style="stroke:var(--metal-hi);stroke-width:.7" transform="rotate(150 80 80)"></line><circle cx="80" cy="80" r="3" fill="url(#metal)"></circle><path d="M48 62 A38 38 0 0 1 98 44 L80 80 Z" style="fill:#fff;opacity:.09"></path></symbol><symbol id="m-hero" viewBox="0 0 500 500"><g transform="translate(250 250)"><use href="#rb" x="-150" y="-150" width="300" height="300"></use></g><g transform="translate(398 150) rotate(16)"><use href="#ec" x="-62" y="-43" width="124" height="87"></use></g><g transform="translate(96 372) rotate(-20) scale(.72 1)"><use href="#rb" x="-62" y="-62" width="124" height="124"></use></g><g transform="translate(396 392)"><use href="#rb" x="-34" y="-34" width="68" height="68"></use></g><g transform="translate(110 118)"><use href="#rb" x="-24" y="-24" width="48" height="48"></use></g></symbol></defs>
+</svg>
+
+<div style="position:sticky;top:0;z-index:50;background:#111;border-bottom:1px solid #2a2a2a">
+<div style="max-width:1240px;margin:0 auto;padding:10px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px">
+<span style="font-family:system-ui,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#bdbdbd;margin-right:6px">Preview design</span>
+<sc-for list="{{themeButtons}}" as="t" hint-placeholder-count="4">
+<button type="button" class="{{t.cls}}" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}">
+<span style="width:14px;height:14px;border-radius:50%;display:inline-block;border:1px solid rgba(255,255,255,.4);background:{{t.dot}}"></span>
+{{t.name}}
+</button>
+</sc-for>
+</div>
+</div>
+
+<div style="background:var(--surface);color:var(--ink);border-bottom:1px solid var(--line)">
+<div style="max-width:1360px;margin:0 auto;padding:9px 40px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:600;letter-spacing:.06em">
+<span>Dubai, UAE &nbsp;·&nbsp; Prices and availability on WhatsApp</span>
+<span style="display:flex;gap:16px;align-items:center"><a href="#contact" style="display:flex"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle></svg></a><a href="https://wa.me/971589039064" style="display:flex"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path></svg></a></span>
+</div></div>
+<header style="background:var(--surface);color:var(--ink);border-bottom:1px solid var(--line)">
+<div style="max-width:1360px;margin:0 auto;padding:22px 40px;display:flex;align-items:center;justify-content:space-between;gap:28px">
+<a href="#top" style="text-decoration:none;color:var(--ink);font-family:var(--fd);font-size:34px;letter-spacing:.1em;line-height:1" aria-label="IMSRA home">IMSRA</a>
+<nav class="nav-links" style="display:flex;gap:30px;align-items:center" aria-label="Main">
+<a class="nav-link" href="#top">Home</a><a class="nav-link" href="#collection">Rings</a><a class="nav-link" href="#collection">Earrings</a><a class="nav-link" href="#collection">Bracelets</a><a class="nav-link" href="#collection">Pendants</a><a class="nav-link" href="#watches">Watches</a><a class="nav-link" href="#gem3d-section">3D diamond</a>
+</nav>
+<div style="display:flex;gap:22px;align-items:center">
+<a href="#collection" aria-label="Search" style="display:flex"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></a><a href="#contact" aria-label="Account" style="display:flex"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg></a><a href="https://wa.me/971589039064?text=Hi%2C%20I%27d%20like%20to%20enquire" aria-label="WhatsApp" style="display:flex"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg></a>
+</div></div></header>
+<section id="top" style="background:var(--hero-fade) var(--hero-img) 0% 80%/118% auto no-repeat;color:var(--hero-ink);overflow:hidden;position:relative;min-height:min(720px,calc(100vh - 150px));display:flex;align-items:flex-end">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--hero-fade) 92%,transparent) 0%,color-mix(in srgb,var(--hero-fade) 70%,transparent) 32%,transparent 62%),linear-gradient(0deg,color-mix(in srgb,var(--hero-fade) 55%,transparent) 0%,transparent 40%)"></div>
+<div style="position:relative;width:100%;max-width:1360px;margin:0 auto;padding:0 40px 84px">
+<h1 style="margin:0 0 18px;font-family:var(--fd);font-weight:400;line-height:1.04;font-size:calc(var(--hs) * clamp(44px, 5.6vw, 86px))">The Solitaire<br>Collection</h1>
+<p style="margin:0 0 34px;font-size:19px;line-height:1.6;color:var(--hero-muted);max-width:430px">Lab-grown diamonds, graded and set to order in Dubai.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-light" href="#collection">View this</a><a class="btn btn-ghost" href="#categories">Collection</a></div>
+</div></section>
+<section style="background:var(--card);border-bottom:1px solid var(--line)"><div class="split" style="max-width:1360px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)"><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14L7 22l5-3 5 3-1.5-8"></path></svg><span style="font-size:14px;font-weight:500">Certified diamonds</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg><span style="font-size:14px;font-weight:500">Made to order</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;border-right:1px solid var(--line);color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 9.5V12l1.8 1.2M9 7l.6-4h4.8l.6 4M9 17l.6 4h4.8l.6-4"></path></svg><span style="font-size:14px;font-weight:500">Luxury watches</span></div><div class="sep" style="padding:26px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path></svg><span style="font-size:14px;font-weight:500">WhatsApp support</span></div></div></section>
+<section id="categories" style="max-width:1360px;margin:0 auto;padding:80px 40px 8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px"><h2 class="h2">Shop by category</h2><a class="lnk" href="#collection">View all</a></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px"><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/h2.jpg" alt="Rings" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Rings</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/e3.jpg" alt="Earrings" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Earrings</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/tb.jpg" alt="Bracelets" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Bracelets</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/n6.jpg" alt="Pendants" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Pendants</div></a><a href="#collection" class="card" style="text-decoration:none;color:var(--ink);background:var(--card);display:block"><div class="ph" style="aspect-ratio:1/1;position:relative"><img src="assets/p8.jpg" alt="Watches" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="padding:18px 12px;text-align:center;font-family:var(--fd);font-size:21px">Watches</div></a></div></section>
+<section id="collection" style="max-width:1360px;margin:0 auto;padding:88px 40px 24px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px"><h2 class="h2">Featured collection</h2><p style="margin:0;font-size:13px;color:var(--muted)">{{countLabel}}</p></div>
+<div role="group" aria-label="Filter by category" style="display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:28px">
+<sc-for list="{{chips}}" as="c" hint-placeholder-count="6"><button type="button" class="{{c.cls}}" onClick="{{c.pick}}" aria-pressed="{{c.pressed}}">{{c.name}}</button></sc-for>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px">
+<sc-for list="{{cards}}" as="p" hint-placeholder-count="8">
+<article class="card" style="background:var(--card);border-radius:2px;display:flex;flex-direction:column;overflow:hidden">
+<div class="ph" style="aspect-ratio:1/1;position:relative;background:var(--pic-bg)"><svg viewBox="0 0 160 160" aria-hidden="true" style="width:78%;height:78%"><use href="{{p.motif}}" width="160" height="160"></use></svg><img src="{{p.img}}" alt="{{p.alt}}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+<div style="padding:20px 20px 24px;display:flex;flex-direction:column;gap:8px;flex:1">
+<h3 style="margin:0;font-family:var(--fb);font-weight:500;font-size:15px;line-height:1.45">{{p.name}}</h3>
+<span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">{{p.code}}</span>
+<span style="font-family:var(--fd);font-size:22px;color:var(--ink);margin-top:2px">{{p.price}}</span>
+<a class="lnk" href="{{p.wa}}" style="margin-top:auto;padding-top:10px;font-size:12px;width:max-content">Enquire on WhatsApp</a>
+</div></article></sc-for></div></section>
+<section id="gem3d-section" style="position:relative;overflow:hidden;--hero-ink:#F4F1E8;--hero-muted:#BDB7AA;color:#F4F1E8;margin-top:88px;background:radial-gradient(circle 300px at 30% 48%,rgba(255,240,200,.22),rgba(255,240,200,0) 100%),radial-gradient(circle 280px at 30% 48%,transparent 0 274px,color-mix(in srgb,var(--accent) 55%,transparent) 276px,transparent 280px),radial-gradient(circle 345px at 30% 48%,transparent 0 339px,color-mix(in srgb,var(--accent) 28%,transparent) 341px,transparent 345px),radial-gradient(ellipse 60% 45% at 30% 105%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 70%),radial-gradient(ellipse 50% 70% at 100% 0%,color-mix(in srgb,var(--stage-b) 90%,transparent),transparent 70%),linear-gradient(135deg,var(--stage-a) 0%,color-mix(in srgb,var(--stage-b) 55%,var(--stage-a)) 50%,var(--stage-a) 100%)"><div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;transform:translateZ(0);background:repeating-conic-gradient(from 0deg at 30% 48%,rgba(255,255,255,.04) 0deg 2deg,rgba(255,255,255,0) 2deg 12deg);-webkit-mask-image:radial-gradient(ellipse 55% 75% at 30% 48%,#000 0%,transparent 75%);mask-image:radial-gradient(ellipse 55% 75% at 30% 48%,#000 0%,transparent 75%)"></div>
+<div class="split" style="position:relative;max-width:1360px;margin:0 auto;padding:88px 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center">
+<div style="position:relative"><div aria-hidden="true" style="position:absolute;left:12%;right:12%;bottom:9%;height:14%;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.22),rgba(255,255,255,0) 70%);border:1px solid rgba(255,255,255,.12)"></div><div aria-hidden="true" style="position:absolute;left:2%;right:2%;top:-4%;bottom:-4%;border-radius:50%;border:1px solid rgba(255,255,255,.07)"></div>
+<canvas id="gem3d" aria-label="Interactive 3D diamond. Drag to rotate." role="img" style="display:block;width:100%;aspect-ratio:1/0.82;cursor:grab;touch-action:pan-y;user-select:none;transform:translateZ(0)"></canvas>
+<div style="position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-muted)"><button type="button" class="opt" style="min-height:36px;padding:0 14px" onClick="{{spinL}}" aria-label="Rotate left">&#8592;</button><span>Drag to rotate</span><button type="button" class="opt" style="min-height:36px;padding:0 14px" onClick="{{spinR}}" aria-label="Rotate right">&#8594;</button></div>
+</div>
+<div>
+<p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Only at IMSRA</p>
+<h2 class="h2" style="color:var(--hero-ink);margin-bottom:18px">See your diamond in 3D</h2>
+<p style="margin:0 0 30px;font-size:16px;line-height:1.75;color:var(--hero-muted);max-width:460px">Pick a shape and a size, then turn the stone with your finger or mouse. Send us your choice and we will source it for you.</p>
+<p style="margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--hero-muted)">Shape</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px"><sc-for list="{{shapeButtons}}" as="s" hint-placeholder-count="6"><button type="button" class="{{s.cls}}" onClick="{{s.pick}}" aria-pressed="{{s.pressed}}">{{s.name}}</button></sc-for></div>
+<p style="margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--hero-muted)">Carat</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px"><sc-for list="{{caratButtons}}" as="c" hint-placeholder-count="6"><button type="button" class="{{c.cls}}" onClick="{{c.pick}}" aria-pressed="{{c.pressed}}">{{c.name}}</button></sc-for></div>
+<div style="border-top:1px solid rgba(127,127,127,.35);padding-top:22px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between">
+<div><div style="font-family:var(--fd);font-size:30px;line-height:1.1">{{gemRead}}</div><div style="font-size:14px;color:var(--hero-muted);margin-top:6px">{{gemSize}}</div></div>
+<a class="btn btn-light" href="{{gemWa}}">Enquire about this stone</a></div>
+<p style="margin:18px 0 0;font-size:12px;color:var(--hero-muted)">Illustration for visualisation. Real stones vary in proportions.</p>
+</div></div></section>
+<section id="why" style="max-width:1360px;margin:0 auto;padding:104px 40px 24px">
+<div class="split" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center">
+<div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--card)">
+<img src="assets/rC.jpg" alt="A pear-cut diamond halo ring" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:54% 50%">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,65,28,.7) 0%,rgba(1,65,28,0) 40%),linear-gradient(160deg,rgba(11,122,67,.28),rgba(11,122,67,0) 45%)"></div>
+<div style="position:absolute;left:24px;top:24px;padding:8px 14px;background:var(--accent);color:#1B1507;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase">Real diamond &middot; grown in a lab</div>
+<div style="position:absolute;right:22px;top:84px;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,.92);color:#10241B;font-size:13px;font-weight:500;letter-spacing:.03em;box-shadow:0 8px 24px rgba(0,0,0,.18)"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>Pure carbon crystal</div><div style="position:absolute;left:22px;bottom:78px;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,.92);color:#10241B;font-size:13px;font-weight:500;letter-spacing:.03em;box-shadow:0 8px 24px rgba(0,0,0,.18)"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>10 on the Mohs scale</div><div style="position:absolute;right:22px;bottom:26px;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,.92);color:#10241B;font-size:13px;font-weight:500;letter-spacing:.03em;box-shadow:0 8px 24px rgba(0,0,0,.18)"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>Graded on the 4Cs</div>
+</div>
+<div><p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--price)">Why lab-grown</p>
+<h2 class="h2" style="margin-bottom:22px">The same diamond.<br>Grown, not mined.</h2>
+<p style="margin:0 0 16px;font-size:16px;line-height:1.75;color:var(--muted)">Lab-grown diamonds are real diamonds. They are chemically and physically the same as mined stones, grown in controlled conditions instead of dug from the ground.</p>
+<p style="margin:0 0 34px;font-size:16px;line-height:1.75;color:var(--muted)">Every stone is graded on the same four qualities, so you can compare with confidence.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 36px;margin-bottom:34px"><div style="border-top:1px solid var(--line);padding:18px 0 4px"><div style="font-family:var(--fd);font-size:24px;margin-bottom:6px">Cut</div><div style="font-size:14px;color:var(--muted);line-height:1.6">Shapes the sparkle.</div></div><div style="border-top:1px solid var(--line);padding:18px 0 4px"><div style="font-family:var(--fd);font-size:24px;margin-bottom:6px">Colour</div><div style="font-size:14px;color:var(--muted);line-height:1.6">Colourless to light tints.</div></div><div style="border-top:1px solid var(--line);padding:18px 0 4px"><div style="font-family:var(--fd);font-size:24px;margin-bottom:6px">Clarity</div><div style="font-size:14px;color:var(--muted);line-height:1.6">Freedom from tiny inclusions.</div></div><div style="border-top:1px solid var(--line);padding:18px 0 4px"><div style="font-family:var(--fd);font-size:24px;margin-bottom:6px">Carat</div><div style="font-size:14px;color:var(--muted);line-height:1.6">The weight of the stone.</div></div></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px 28px;margin-bottom:30px;font-size:13px;letter-spacing:.06em;color:var(--muted)"><span>&#10003; Same hardness as mined</span><span>&#10003; Traceable origin</span><span>&#10003; Set to order</span></div><a class="btn btn-dark" href="https://wa.me/971589039064?text=Hi%2C%20please%20help%20me%20choose%20a%20diamond">Ask us to help you choose</a></div>
+</div></section>
+<section style="position:relative;overflow:hidden;margin-top:96px;background:#1a1410;color:#fff;min-height:440px;display:flex;align-items:center">
+<img src="assets/n5.jpg" alt="Diamond solitaire necklace" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(10,8,6,.86) 0%, rgba(10,8,6,.55) 45%, rgba(10,8,6,0) 75%)"></div>
+<div style="position:relative;max-width:1360px;margin:0 auto;padding:72px 40px;width:100%"><p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#E6D3A3">Made to your design</p>
+<h2 class="h2" style="color:#fff;margin-bottom:18px;max-width:480px">Your idea, set in diamond.</h2>
+<p style="margin:0 0 30px;font-size:17px;line-height:1.7;color:#E8E2D8;max-width:440px">Send a reference photo and we will source it to make it yours.</p>
+<a class="btn btn-light" href="https://wa.me/971589039064?text=Hi%2C%20I%20have%20a%20custom%20design%20idea">Start on WhatsApp</a></div></section>
+<section id="watches" style="background:var(--card)">
+<div class="split" style="max-width:1360px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:center">
+<div><p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--price)">Luxury watches</p>
+<h2 class="h2" style="margin-bottom:20px">Time, sourced for you.</h2>
+<p style="margin:0 0 30px;font-size:16px;line-height:1.75;color:var(--muted);max-width:420px">Tell us the model you want and we will check availability and price. Send a photo or a reference number on WhatsApp and we will take it from there.</p>
+<a class="btn btn-dark" href="https://wa.me/971589039064?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20watch">Ask about a watch</a></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div style="aspect-ratio:4/5;position:relative;background:#e9e9e9"><img src="assets/p7.jpg" alt="Silver chronograph watch on soft fabric" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+<div style="aspect-ratio:4/5;position:relative;background:#e9e9e9"><img src="assets/p8.jpg" alt="Steel watch with white dial" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div>
+</div></section>
+<section style="max-width:none;margin:96px 0 0;padding:0;background:var(--band)"><div style="max-width:1360px;margin:0 auto;padding:88px 40px 80px;text-align:center"><p style="margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--price)">On the gram</p><h2 class="h2" style="margin-bottom:8px">Worn and loved</h2><p style="margin:0 0 30px;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:5px">[INSTAGRAM HANDLE]</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px"><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/h2.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/n5.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/e3.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/n6.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/h7.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="aspect-ratio:1/1;position:relative;background:var(--card)"><img src="assets/h8.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div></div></section>
+<section id="contact" style="max-width:1360px;margin:0 auto;padding:104px 40px 96px">
+<div style="text-align:center;margin-bottom:44px"><h2 class="h2">How to order</h2></div>
+<div class="split" style="display:grid;grid-template-columns:repeat(3,1fr)"><div class="sep" style="padding:8px 36px 8px;border-right:1px solid var(--line);text-align:center"><div style="width:72px;height:72px;margin:0 auto 18px;border:1px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:34px;line-height:1;color:var(--price)">1</div><div style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">Choose a piece</div><p style="margin:0;font-size:15px;line-height:1.7;color:var(--muted)">Browse the collection and note the piece code, or send us a reference photo.</p></div><div class="sep" style="padding:8px 36px 8px;border-right:1px solid var(--line);text-align:center"><div style="width:72px;height:72px;margin:0 auto 18px;border:1px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:34px;line-height:1;color:var(--price)">2</div><div style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">Message us</div><p style="margin:0;font-size:15px;line-height:1.7;color:var(--muted)">Share the code or photo on WhatsApp. We reply with price, availability and options.</p></div><div class="sep" style="padding:8px 36px 8px;text-align:center"><div style="width:72px;height:72px;margin:0 auto 18px;border:1px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:34px;line-height:1;color:var(--price)">3</div><div style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">Confirm your order</div><p style="margin:0;font-size:15px;line-height:1.7;color:var(--muted)">We confirm the details with you and arrange your piece.</p></div></div>
+<div style="margin-top:56px;border-top:1px solid var(--line);padding-top:36px;display:flex;flex-wrap:wrap;gap:24px 56px;align-items:center;justify-content:space-between">
+<div style="display:flex;flex-wrap:wrap;gap:20px 56px;font-size:15px"><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">WhatsApp</span>+971 58 903 9064</span><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Email</span>[EMAIL ADDRESS]</span><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Based in</span>Dubai, UAE</span></div>
+<a class="btn btn-dark" href="https://wa.me/971589039064?text=Hi%2C%20I%27d%20like%20to%20enquire">Chat on WhatsApp</a></div></section>
+<footer style="background:var(--foot-bg);color:var(--foot-ink);border-top:3px solid var(--accent)">
+<div style="max-width:1360px;margin:0 auto;padding:72px 40px 48px;display:flex;flex-wrap:wrap;gap:48px 80px;justify-content:space-between">
+<div style="flex:1 1 280px;max-width:360px"><span style="font-family:var(--fd);font-size:34px;letter-spacing:.1em;color:#fff">IMSRA</span><p style="margin:16px 0 0;font-size:14px;line-height:1.75">Certified lab-grown diamonds, fine jewellery and luxury watches. Made to order, enquired directly on WhatsApp.</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><strong style="color:#fff;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12px;margin-bottom:4px">Shop</strong><a href="#collection" style="text-decoration:none">Rings</a><a href="#collection" style="text-decoration:none">Earrings</a><a href="#collection" style="text-decoration:none">Bracelets</a><a href="#collection" style="text-decoration:none">Pendants</a><a href="#watches" style="text-decoration:none">Watches</a></div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><strong style="color:#fff;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12px;margin-bottom:4px">Learn</strong><a href="#gem3d-section" style="text-decoration:none">Diamond shapes</a><a href="#why" style="text-decoration:none">Why lab-grown</a><a href="#contact" style="text-decoration:none">How to order</a></div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><strong style="color:#fff;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12px;margin-bottom:4px">Contact</strong><a href="https://wa.me/971589039064" style="text-decoration:none">WhatsApp</a><a href="mailto:[EMAIL ADDRESS]" style="text-decoration:none">[EMAIL ADDRESS]</a><a href="#contact" style="text-decoration:none">[INSTAGRAM HANDLE]</a></div>
+</div>
+<div style="max-width:1360px;margin:0 auto;padding:22px 40px 34px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px"><span>© 2026 IMSRA. Sample design for review.</span><span>Sample photography from Unsplash.</span></div></footer>
+<a class="wa-fab" href="https://wa.me/971589039064?text=Hi%2C%20I%27d%20like%20to%20enquire" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path></svg></a>
+
+</div>
+</script>
+<script>
+class DCLogic{constructor(){this.props={theme:'emerald'};}setState(o){Object.assign(this.state,o);window.__render();}}
+
+/* IMSRA 3D gem engine: software-rendered facet mesh on a 2D canvas */
+const GEM_SHAPES = {
+  round:   { name: 'Round',    len: 1.00, outline: (t) => [Math.sin(t), Math.cos(t)] },
+  oval:    { name: 'Oval',     len: 1.22, outline: (t) => [0.74 * Math.sin(t), Math.cos(t)] },
+  pear:    { name: 'Pear',     len: 1.32, outline: (t) => { const z = Math.cos(t), w = Math.pow((1 + z) / 2, 0.75); return [0.8 * Math.sin(t) * (0.12 + 0.88 * w), 1.1 * z]; } },
+  emerald: { name: 'Emerald',  len: 1.28, outline: (t) => { const s = Math.sin(t), c = Math.cos(t), p = 6; const k = Math.pow(Math.pow(Math.abs(s) / 0.74, p) + Math.pow(Math.abs(c), p), 1 / p); return [s / k, c / k]; } },
+  cushion: { name: 'Cushion',  len: 0.98, outline: (t) => { const s = Math.sin(t), c = Math.cos(t), p = 2.7; const k = Math.pow(Math.pow(Math.abs(s), p) + Math.pow(Math.abs(c), p), 1 / p); return [0.97 * s / k, 0.97 * c / k]; } },
+  marquise:{ name: 'Marquise', len: 1.55, outline: (t) => { const s = Math.sin(t); return [0.56 * Math.sign(s) * Math.pow(Math.abs(s), 1.3), 1.18 * Math.cos(t)]; } }
+};
+const gemCache = {};
+function gemMesh(key) {
+  if (gemCache[key]) return gemCache[key];
+  const N = 16, sh = GEM_SHAPES[key];
+  const ring = (scale, y, off) => {
+    const a = [];
+    for (let i = 0; i < N; i++) { const t = ((i + off) / N) * Math.PI * 2; const p = sh.outline(t); a.push([p[0] * scale, y, p[1] * scale]); }
+    return a;
+  };
+  const HC = 0.34, HP = 0.82;
+  const G = ring(1, 0, 0), T = ring(0.58, HC, 0), K = ring(0.8, HC * 0.58, 0.5), P = ring(0.5, -HP * 0.46, 0.5);
+  const C = [0, -HP, 0];
+  const faces = [];
+  const add = (pts, kind, seed) => faces.push({ pts, kind, seed });
+  add(T.slice(), 'table', 0);
+  for (let i = 0; i < N; i++) {
+    const j = (i + 1) % N, h = (i + N - 1) % N;
+    add([T[i], T[j], K[i]], 'star', i);
+    add([T[i], K[h], G[i], K[i]], 'bezel', i);
+    add([K[i], G[i], G[j]], 'upper', i);
+    add([G[j], G[i], P[i]], 'lower', i);
+    add([G[i], P[h], C, P[i]], 'pavilion', i);
+  }
+  const m = { faces };
+  gemCache[key] = m; return m;
+}
+function hexRgb(h) { h = (h || '#ffffff').trim(); if (h[0] === '#') { if (h.length === 4) h = '#' + h[1] + h[1] + h[2] + h[2] + h[3] + h[3]; return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; } return [255, 255, 255]; }
+function mix(a, b, t) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]; }
+function drawGem(ctx, W, H, st, pal, time) {
+  ctx.clearRect(0, 0, W, H);
+  const cx = W / 2, cy = H * 0.52;
+  const size = Math.min(W, H) * 0.36 * Math.pow(st.carat, 1 / 3) / Math.pow(1.5, 1 / 3) * 1.0;
+  const lenF = GEM_SHAPES[st.shape].len;
+  const sc = size / Math.sqrt(lenF);
+  // soft floor shadow + glow
+  const gl = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.min(W, H) * 0.55);
+  gl.addColorStop(0, 'rgba(' + pal.glow.join(',') + ',0.30)'); gl.addColorStop(1, 'rgba(' + pal.glow.join(',') + ',0)');
+  ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
+  const mesh = gemMesh(st.shape);
+  const cy_ = Math.cos(st.yaw), sy = Math.sin(st.yaw), cp = Math.cos(st.pitch), sp = Math.sin(st.pitch);
+  const proj = (p) => {
+    let x = p[0] * cy_ - p[2] * sy, z = p[0] * sy + p[2] * cy_, y = p[1] - 0.18;
+    const y2 = y * cp + z * sp, z2 = -y * sp + z * cp;
+    const f = 4.2 / (4.2 + z2);
+    return { x: cx + x * sc * f, y: cy - y2 * sc * f, z: z2, rx: x, ry: y2, rz: z2 };
+  };
+  // shadow
+  ctx.save(); ctx.translate(cx, cy + sc * 0.95); ctx.scale(1, 0.18);
+  const sg = ctx.createRadialGradient(0, 0, 0, 0, 0, sc * 1.1); sg.addColorStop(0, 'rgba(0,0,0,0.28)'); sg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = sg; ctx.beginPath(); ctx.arc(0, 0, sc * 1.1, 0, 7); ctx.fill(); ctx.restore();
+  const L = [-0.35, 0.8, 0.5]; const ln = Math.hypot(L[0], L[1], L[2]); L[0] /= ln; L[1] /= ln; L[2] /= ln;
+  const out = [];
+  for (const f of mesh.faces) {
+    const q = f.pts.map(proj);
+    // normal in rotated space
+    const a = q[0], b = q[1], c = q[2];
+    let nx = (b.ry - a.ry) * (c.rz - a.rz) - (b.rz - a.rz) * (c.ry - a.ry);
+    let ny = (b.rz - a.rz) * (c.rx - a.rx) - (b.rx - a.rx) * (c.rz - a.rz);
+    let nz = (b.rx - a.rx) * (c.ry - a.ry) - (b.ry - a.ry) * (c.rx - a.rx);
+    const nl = Math.hypot(nx, ny, nz) || 1; nx /= nl; ny /= nl; nz /= nl;
+    let mx = 0, my = 0, mz = 0; for (const p of q) { mx += p.rx; my += p.ry; mz += p.rz; } mx /= q.length; my /= q.length; mz /= q.length;
+    // orient outward from gem centre
+    const cyc = -0.1; if (nx * mx + ny * (my - cyc) + nz * mz < 0) { nx = -nx; ny = -ny; nz = -nz; }
+    // view vector toward camera is (0,0,-1) in this space (camera at -z); facing = -nz
+    const facing = -nz;
+    const dot = nx * L[0] + ny * L[1] + nz * -L[2];
+    // reflection of view dir about normal
+    const vd = [0, 0, 1]; const dn = vd[0] * nx + vd[1] * ny + vd[2] * nz;
+    const r = [vd[0] - 2 * dn * nx, vd[1] - 2 * dn * ny, vd[2] - 2 * dn * nz];
+    const wave = Math.sin(r[0] * 5.2 + r[1] * 3.4 + f.seed * 1.7 + (f.kind === 'pavilion' ? 1.3 : 0)) * 0.5 + 0.5;
+    const wave2 = Math.sin(r[1] * 7.1 - r[0] * 2.3 + f.seed * 0.9 + time * 0.0003) * 0.5 + 0.5;
+    out.push({ q, facing, dot, wave, wave2, kind: f.kind, depth: mz });
+  }
+  out.sort((p, q) => q.depth - p.depth);
+  for (const o of out) {
+    let col;
+    const back = o.facing < 0;
+    const base = mix(pal.dark, pal.mid, o.wave);
+    col = mix(base, pal.light, Math.min(1, Math.max(0, o.wave2 * 0.7 + (o.kind === 'table' ? 0.1 : 0) + Math.max(0, o.dot) * 0.25)));
+    if (o.wave > 0.86 && !back) col = mix(col, pal.warm, 0.7);
+    if (o.wave2 > 0.93 && !back) col = mix(col, [255, 255, 255], 0.85);
+    const alpha = back ? 0.8 : (o.kind === 'table' ? 0.38 : 0.88);
+    ctx.beginPath(); ctx.moveTo(o.q[0].x, o.q[0].y); for (let i = 1; i < o.q.length; i++) ctx.lineTo(o.q[i].x, o.q[i].y); ctx.closePath();
+    ctx.fillStyle = 'rgba(' + col.map(Math.round).join(',') + ',' + alpha + ')';
+    ctx.fill();
+    ctx.strokeStyle = back ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.38)'; ctx.lineWidth = 0.8; ctx.stroke();
+    if (!back && o.wave2 > 0.95) { const c0 = o.q.reduce((a, p) => [a[0] + p.x / o.q.length, a[1] + p.y / o.q.length], [0, 0]); sparkle(ctx, c0[0], c0[1], 9 + o.wave2 * 8); }
+  }
+}
+function sparkle(ctx, x, y, r) {
+  ctx.save(); ctx.translate(x, y); ctx.fillStyle = 'rgba(255,255,255,0.95)';
+  ctx.beginPath(); ctx.moveTo(0, -r); ctx.quadraticCurveTo(0.8, -0.8, r, 0); ctx.quadraticCurveTo(0.8, 0.8, 0, r); ctx.quadraticCurveTo(-0.8, 0.8, -r, 0); ctx.quadraticCurveTo(-0.8, -0.8, 0, -r); ctx.fill(); ctx.restore();
+}
+
+const GEM_SHEETS = { round: 'assets/gem_round.webp', oval: 'assets/gem_oval.webp', pear: 'assets/gem_pear.webp', emerald: 'assets/gem_emerald.webp', cushion: 'assets/gem_cushion.webp', marquise: 'assets/gem_marquise.webp' };
+const GEM_IMG = {}, GEM_FRAMES = {};
+function gemSheet(key) { let im = GEM_IMG[key]; if (!im) { im = new Image(); im.decoding = 'async'; im.src = GEM_SHEETS[key]; GEM_IMG[key] = im; } return im; }
+function drawSprite(cv, g) {
+  const im = gemSheet(g.shape);
+  if (!im.complete || !im.naturalWidth) return false;
+  const NF = 30;
+  let fr = GEM_FRAMES[g.shape];
+  if (!fr) {
+    const FW = Math.round(im.naturalWidth / 6), FH = Math.round(im.naturalHeight / 5);
+    fr = GEM_FRAMES[g.shape] = [];
+    for (let i = 0; i < NF; i++) { const c = document.createElement('canvas'); c.width = FW; c.height = FH; c.getContext('2d').drawImage(im, (i % 6) * FW, Math.floor(i / 6) * FH, FW, FH, 0, 0, FW, FH); fr.push(c); }
+  }
+  const FW = fr[0].width, FH = fr[0].height;
+  const a = (g.yaw % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) / (Math.PI * 2) * NF;
+  const f0 = Math.floor(a) % NF, f1 = (f0 + 1) % NF, t = Math.round((a - Math.floor(a)) * 16) / 16;
+  const sc = 0.85 * Math.pow(g.carat / 2.8, 1 / 3);
+  const key = f0 + '|' + t + '|' + g.shape + '|' + g.carat + '|' + cv.width + 'x' + cv.height;
+  if (cv.__key === key) return true;
+  cv.__key = key;
+  const c2 = cv.getContext('2d'); c2.clearRect(0, 0, cv.width, cv.height);
+  const dw = cv.width * sc, dh = dw * FH / FW, dx = (cv.width - dw) / 2, dy = (cv.height - dh) / 2 + cv.height * 0.02;
+  c2.globalAlpha = 1; c2.drawImage(fr[f0], dx, dy, dw, dh);
+  if (t > 0) { c2.globalAlpha = t; c2.drawImage(fr[f1], dx, dy, dw, dh); c2.globalAlpha = 1; }
+  return true;
+}
+
+class Component extends DCLogic {
+  state = { theme: null, filter: 'all', shape: 'round', carat: 1.5 };
+
+
+  _boot3d() {
+    if (window.__gemBoot) return;
+    window.__gemBoot = true;
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let down = false, lx = 0, vel = 0, vis = true;
+    const inCv = (x, y) => { const cv = document.getElementById('gem3d'); if (!cv) return false; const r = cv.getBoundingClientRect(); return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; };
+    const start = (x, y) => { if (!inCv(x, y)) return; const g = window.__gem; down = true; g.drag = true; lx = x; vel = 0; };
+    const move = (x) => { if (!down) return; const g = window.__gem; const d = (x - lx) * 0.012; g.yaw += d; vel = d; lx = x; };
+    const end = () => { if (!down) return; down = false; const g = window.__gem; g.drag = false; g.last = performance.now(); g.vel = vel; };
+    window.addEventListener('pointerdown', (e) => start(e.clientX, e.clientY), true);
+    window.addEventListener('pointermove', (e) => move(e.clientX), true);
+    window.addEventListener('pointerup', end, true); window.addEventListener('pointercancel', end, true);
+    window.addEventListener('mousedown', (e) => { if (!down) start(e.clientX, e.clientY); }, true);
+    window.addEventListener('mousemove', (e) => move(e.clientX), true);
+    window.addEventListener('mouseup', end, true);
+    window.addEventListener('touchstart', (e) => { const t0 = e.touches[0]; if (t0) start(t0.clientX, t0.clientY); }, { capture: true, passive: true });
+    window.addEventListener('touchmove', (e) => { const t0 = e.touches[0]; if (t0 && down) { move(t0.clientX); } }, { capture: true, passive: true });
+    window.addEventListener('touchend', end, true);
+    let raf = 0, lastTs = 0, bound = null, io = null, W = 0, H = 0;
+    const frame = (t) => {
+      raf = 0;
+      const g = window.__gem, cv = document.getElementById('gem3d');
+      if (!cv || !g) { setTimeout(() => { if (window.__gemKick) window.__gemKick(); }, 250); return; }
+      if (!vis) return;
+      try {
+        if (cv !== bound) {
+          bound = cv; if (io) io.disconnect();
+          io = new IntersectionObserver((en) => { vis = en[0].isIntersecting; if (vis && !raf) raf = requestAnimationFrame(frame); }, { rootMargin: '80px' });
+          io.observe(cv);
+        }
+        const dt = Math.min(48, t - (lastTs || t)); lastTs = t;
+        const r = cv.getBoundingClientRect();
+        if (r.width > 0) {
+          const k = Math.min(1, 600 / r.width);
+          const w = Math.round(r.width * k), h = Math.round(r.height * k);
+          if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; cv.__key = ''; }
+          if (!g.drag) {
+            if (Math.abs(g.vel || 0) > 0.0004) { g.yaw += g.vel * dt / 16; g.vel *= Math.pow(0.94, dt / 16); }
+            else if (!reduced && t - g.last > 1200) g.yaw += 0.0004 * dt;
+          }
+          if (!drawSprite(cv, g)) {
+            cv.__key = '';
+            const cs = getComputedStyle(cv), v = (nm) => hexRgb(cs.getPropertyValue(nm));
+            const pal = { dark: v('--g6'), mid: mix(v('--g5'), v('--g1'), 0.35), light: v('--g2'), warm: v('--g3'), glow: v('--g5') };
+            drawGem(cv.getContext('2d'), cv.width, cv.height, g, pal, t);
+          }
+        }
+      } catch (e) {}
+      if (vis) raf = requestAnimationFrame(frame);
+    };
+    window.__gemKick = () => { lastTs = 0; if (!raf) raf = requestAnimationFrame(frame); };
+    window.__gemKick();
+  }
+
+  renderVals() {
+    const THEMES = {
+      emerald: {
+        name: 'Emerald', dot: '#093624', hero: 'row',
+        v: {
+          'bg': '#EFF8EC', 'card': '#DDEEDD', 'surface': '#FFFFFF', 'ink': '#01411C', 'muted': '#40604F', 'line': '#BFDCC5', 'band': '#CDE7D3', 'glow': '#2FB583',
+          'hero-bg': 'radial-gradient(1200px 640px at 75% 40%, #12583A 0%, #093624 46%, #04180F 100%)',
+          'hero-img': 'url(assets/hero1.jpg)', 'hero-fade': '#01411C', 'hero-ink': '#F4F1E8', 'hero-muted': '#BFD3C8', 'accent': '#C6A15B', 'price': '#0B7A43',
+          'btn-bg': '#C6A15B', 'btn-ink': '#1B1507', 'foot-bg': 'linear-gradient(165deg,#01411C 0%,#0B6B3A 55%,#01411C 100%)', 'foot-ink': '#C3D6CB',
+          'pic-bg': 'radial-gradient(circle at 50% 35%, #FFFFFF 0%, #C9E7D2 100%)',
+          'metal': '#C6A15B', 'metal-hi': '#F1DFA6', 'metal-lo': '#8E6C2A',
+          'g1': '#9ED3B5', 'g2': '#EAF6EF', 'g3': '#F0E2BC', 'g4': '#2F7A57', 'g5': '#5FAE86', 'g6': '#1F5E43',
+          'glow': 'rgba(94,190,140,.45)', 'dshadow': 'rgba(0,0,0,.4)', 'star': '#FFFFFF', 'ring': '#093624', 'hl': '#D9B76B', 'hi': 'italic',
+          'stage-a': '#012A14', 'stage-b': '#0E7A44', 'fd': "'Bodoni Moda', serif", 'fb': "'Hanken Grotesk', sans-serif", 'hs': '1'
+        }
+      },
+      noir: {
+        name: 'Noir', dot: '#D9B77A', hero: 'center',
+        v: {
+          'bg': '#0C0C0D', 'card': '#161618', 'surface': '#151517', 'ink': '#F3EEE4', 'muted': '#ABA497', 'line': '#2B2B2E', 'band': '#141416', 'glow': '#D9B77A',
+          'hero-bg': 'radial-gradient(900px 560px at 50% 38%, #2A2418 0%, #131211 55%, #0C0C0D 100%)',
+          'hero-img': 'url(assets/hero1.jpg)', 'hero-fade': '#121110', 'hero-ink': '#F6F1E7', 'hero-muted': '#B8B1A2', 'accent': '#D9B77A', 'price': '#E2C48C',
+          'btn-bg': '#D9B77A', 'btn-ink': '#14100A', 'foot-bg': '#000000', 'foot-ink': '#B8B1A2',
+          'pic-bg': 'radial-gradient(circle at 50% 35%, #2A2A2E 0%, #151517 100%)',
+          'metal': '#D9B77A', 'metal-hi': '#F5E1B5', 'metal-lo': '#9A7A3F',
+          'g1': '#E9E4DA', 'g2': '#FFFFFF', 'g3': '#F3D9A0', 'g4': '#8F8A82', 'g5': '#C9C4BA', 'g6': '#5C5851',
+          'glow': 'rgba(217,183,122,.32)', 'dshadow': 'rgba(0,0,0,.7)', 'star': '#FFFFFF', 'ring': '#131211', 'hl': '#D9B77A', 'hi': 'italic',
+          'stage-a': '#0A0A0B', 'stage-b': '#3A2E18', 'fd': "'Cormorant Garamond', serif", 'fb': "'Jost', sans-serif", 'hs': '1.14'
+        }
+      },
+      ivory: {
+        name: 'Ivory Rose', dot: '#E9B8B8', hero: 'reverse',
+        v: {
+          'bg': '#FBF6F1', 'card': '#F6EBE5', 'surface': '#FFFFFF', 'ink': '#3A2528', 'muted': '#765B5E', 'line': '#EBDAD2', 'band': '#F6EBE5', 'glow': '#E39AA8',
+          'hero-bg': 'linear-gradient(135deg, #F7E6DE 0%, #F1D5CD 55%, #EBC4BF 100%)',
+          'hero-img': 'url(assets/hero2.jpg)', 'hero-fade': '#F7E6DE', 'hero-ink': '#3A2528', 'hero-muted': '#6E4F52', 'accent': '#B76E79', 'price': '#8E4452',
+          'btn-bg': '#3A2528', 'btn-ink': '#FFF3EE', 'foot-bg': '#3A2528', 'foot-ink': '#EAD3CC',
+          'pic-bg': 'radial-gradient(circle at 50% 35%, #FFFFFF 0%, #F6E4DD 100%)',
+          'metal': '#D9959C', 'metal-hi': '#F7D9D4', 'metal-lo': '#A8626C',
+          'g1': '#F6D5DA', 'g2': '#FFF7F8', 'g3': '#FBE3C8', 'g4': '#D79BA6', 'g5': '#EBBAC3', 'g6': '#B76E79',
+          'glow': 'rgba(255,255,255,.85)', 'dshadow': 'rgba(120,50,60,.28)', 'star': '#B76E79', 'ring': '#F1D5CD', 'hl': '#8E4452', 'hi': 'normal',
+          'stage-a': '#2A1219', 'stage-b': '#8A4358', 'fd': "'Gilda Display', serif", 'fb': "'Figtree', sans-serif", 'hs': '1'
+        }
+      },
+      sapphire: {
+        name: 'Sapphire', dot: '#1B3A6B', hero: 'row',
+        v: {
+          'bg': '#F6F8FC', 'card': '#EAEFF8', 'surface': '#FFFFFF', 'ink': '#0B1B33', 'muted': '#4A5B78', 'line': '#D6DFEE', 'band': '#EAEFF8', 'glow': '#5B8CFF',
+          'hero-bg': 'radial-gradient(1000px 620px at 78% 40%, #1B3A6B 0%, #0B1B33 50%, #060F20 100%)',
+          'hero-img': 'url(assets/hero1.jpg)', 'hero-fade': '#081A33', 'hero-ink': '#F2F6FF', 'hero-muted': '#B9C8E2', 'accent': '#B8C9E8', 'price': '#1E3F7A',
+          'btn-bg': '#DCE7FA', 'btn-ink': '#0B1B33', 'foot-bg': '#060F20', 'foot-ink': '#B9C8E2',
+          'pic-bg': 'radial-gradient(circle at 50% 35%, #FFFFFF 0%, #DCE6F6 100%)',
+          'metal': '#C5D0E2', 'metal-hi': '#FFFFFF', 'metal-lo': '#8191B0',
+          'g1': '#A9C6F2', 'g2': '#EEF4FF', 'g3': '#DDE8FF', 'g4': '#3F6FB8', 'g5': '#6D98D8', 'g6': '#1E3F7A',
+          'glow': 'rgba(110,160,255,.42)', 'dshadow': 'rgba(0,0,0,.45)', 'star': '#FFFFFF', 'ring': '#0B1B33', 'hl': '#B8C9E8', 'hi': 'normal',
+          'stage-a': '#081230', 'stage-b': '#2547A8', 'fd': "'Marcellus', serif", 'fb': "'Manrope', sans-serif", 'hs': '1'
+        }
+      }
+    };
+
+    const id = this.state.theme || this.props.theme || 'emerald';
+    const t = THEMES[id] || THEMES.emerald;
+    const themeVars = Object.keys(t.v).map((k) => '--' + k + ':' + t.v[k]).join(';');
+
+    const themeButtons = Object.keys(THEMES).map((k) => ({
+      name: THEMES[k].name,
+      dot: THEMES[k].dot,
+      cls: k === id ? 'tb tb-on' : 'tb',
+      pressed: k === id ? 'true' : 'false',
+      pick: () => this.setState({ theme: k })
+    }));
+
+
+    const g3 = window.__gem || (window.__gem = { shape: 'round', carat: 1.5, yaw: 0.6, pitch: 0.62, drag: false, last: 0 });
+    g3.shape = this.state.shape || 'round'; g3.carat = this.state.carat || 1.5;
+    setTimeout(() => { this._boot3d(); if (window.__gemKick) window.__gemKick(); }, 0);
+    const shapeButtons = Object.keys(GEM_SHAPES).map((k) => ({
+      name: GEM_SHAPES[k].name,
+      cls: k === g3.shape ? 'opt opt-on' : 'opt',
+      pressed: k === g3.shape ? 'true' : 'false',
+      pick: () => { this.setState({ shape: k }); }
+    }));
+    const caratButtons = [0.5, 1, 1.5, 2, 3, 5].map((c) => ({
+      name: c + ' ct',
+      cls: c === g3.carat ? 'opt opt-on' : 'opt',
+      pressed: c === g3.carat ? 'true' : 'false',
+      pick: () => { this.setState({ carat: c }); }
+    }));
+    const mm = (6.5 * Math.pow(g3.carat, 1 / 3) * GEM_SHAPES[g3.shape].len).toFixed(1);
+    const gemRead = g3.carat.toFixed(2) + ' ct ' + GEM_SHAPES[g3.shape].name;
+    const gemSize = 'Approx. ' + mm + ' mm long';
+    const gemWa = 'https://wa.me/971589039064?text=' + encodeURIComponent("Hi, I'd like a " + g3.carat + 'ct ' + GEM_SHAPES[g3.shape].name + ' lab-grown diamond. Can you share options and price?');
+
+    const filter = this.state.filter || 'all';
+    const cats = [
+      ['all', 'All'], ['rings', 'Rings'], ['earrings', 'Earrings'],
+      ['bracelets', 'Bracelets'], ['pendants', 'Pendants'], ['watches', 'Watches']
+    ];
+    const chips = cats.map((c) => ({
+      name: c[1],
+      cls: c[0] === filter ? 'tab tab-on' : 'tab',
+      pressed: c[0] === filter ? 'true' : 'false',
+      pick: () => this.setState({ filter: c[0] })
+    }));
+
+    const motifs = { rings: '#m-ring', earrings: '#m-earring', bracelets: '#m-bracelet', pendants: '#m-pendant', watches: '#m-watch' };
+    const products = [
+      { name: '1.50ct Solitaire Oval with Round Cluster', code: 'LG00605', price: 'AED 8,632', cat: 'rings', img: 'assets/p1.jpg' },
+      { name: '2ct Cushion Cut Solitaire Grown Diamond', code: 'LG00513', price: 'AED 6,427', cat: 'rings', img: 'assets/p2.jpg' },
+      { name: '3ct Pear Shape Grown Diamond Fancy Earring', code: 'LG00191', price: 'AED 12,305', cat: 'earrings', img: 'assets/p3.jpg' },
+      { name: 'Fancy Dangling Earrings', code: 'LG00126', price: 'AED 13,957', cat: 'earrings', img: 'assets/p4.jpg' },
+      { name: '15ct Emerald Cut Grown Diamond Tennis Bracelet', code: 'LG00016', price: 'AED 34,522', cat: 'bracelets', img: 'assets/p5.jpg' },
+      { name: 'Single Solitaire Round with Round Diamond Cluster Pendant', code: 'LG00264', price: 'AED 4,774', cat: 'pendants', img: 'assets/p6.jpg' },
+      { name: 'Automatic Watch, Gold Case', code: 'SAMPLE WATCH 01', price: 'Price on request', cat: 'watches', img: 'assets/p7.jpg' },
+      { name: 'Chronograph Watch, Steel', code: 'SAMPLE WATCH 02', price: 'Price on request', cat: 'watches', img: 'assets/p8.jpg' }
+    ];
+    const shown = products.filter((p) => filter === 'all' || p.cat === filter);
+    const cards = shown.map((p) => ({
+      name: p.name,
+      code: p.code,
+      price: p.price,
+      alt: p.name,
+      motif: motifs[p.cat],
+      img: p.img,
+      wa: 'https://wa.me/971589039064?text=' + encodeURIComponent("Hi, I'd like to enquire about " + p.name + ' (' + p.code + ')')
+    }));
+
+    const dirs = { row: 'row', center: 'row', reverse: 'row' };
+    const centered = t.hero === 'center';
+
+    return {
+      themeVars: themeVars,
+      spinL: () => { const g = window.__gem; g.vel = -0.09; g.drag = false; g.last = performance.now(); }, spinR: () => { const g = window.__gem; g.vel = 0.09; g.drag = false; g.last = performance.now(); }, shapeButtons: shapeButtons, caratButtons: caratButtons, gemRead: gemRead, gemSize: gemSize, gemWa: gemWa,
+      themeButtons: themeButtons,
+      chips: chips,
+      cards: cards,
+      countLabel: 'Showing ' + cards.length + (cards.length === 1 ? ' piece' : ' pieces'),
+      heroDir: dirs[t.hero],
+      heroMargin: centered ? '0 auto' : '0',
+      heroAlign: centered ? 'center' : 'left',
+      heroJustify: centered ? 'center' : 'flex-start'
+    };
+  }
+}
+
+
+(function(){
+var TPL=document.getElementById('tpl').textContent;
+var comp=new Component();window.__comp=comp;var H=[];
+function expandFor(t,vals){return t.replace(/<sc-for list="\{\{(\w+)\}\}" as="(\w+)"[^>]*>([\s\S]*?)<\/sc-for>/g,function(_,l,v,inner){
+ return (vals[l]||[]).map(function(it){return inner.replace(/\{\{(\w+)\.(\w+)\}\}/g,function(m,a,b){if(a!==v)return m;var x=it[b];if(typeof x==='function'){H.push(x);return 'h'+(H.length-1);}return String(x);});}).join('');});}
+function render(){H=[];var vals=comp.renderVals();var t=expandFor(TPL,vals);
+ t=t.replace(/onClick="\{\{(\w+)\}\}"/g,function(m,k){H.push(vals[k]);return 'data-h="'+(H.length-1)+'"';});
+ t=t.replace(/onClick="h(\d+)"/g,'data-h="$1"');
+ t=t.replace(/\{\{(\w+)\}\}/g,function(m,k){var x=vals[k];return x==null?'':String(x);});
+ var y=window.scrollY;document.getElementById('app').innerHTML=t;window.scrollTo(0,y);}
+window.__render=render;
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('[data-h]');if(el){var f=H[+el.getAttribute('data-h')];if(f)f(e);}});
+render();
+})();
+</script>
+</body></html>
